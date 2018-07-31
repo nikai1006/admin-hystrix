@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: admin-hystrix
+
+########################################################################
+# mail
+########################################################################
+  mail:
+    username: job_jiatui@163.com
+    password: nikai8015
+    port: 25
+    host: smtp.163.com
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: false
+  boot:
+    admin:
+      notify:
+        mail:
+          from: job_jiatui@163.com
+          to: ["nikai1006@126.com"]
+          ignore-changes: "*:UP"

@@ -1,0 +1,7 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://dev.nikai.net.cn:8761/eureka/
+
+server:
+  port: 19001
