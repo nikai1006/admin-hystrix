@@ -2,6 +2,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://dev.nikai.net.cn:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    secure-port: ${server.port}
 
 server:
   port: 19001
